@@ -1,0 +1,32 @@
+
+.bg-preestudios{
+    background-image: url('../../../assets/img/preestudios.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 193px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bg-preestudios h2{
+    color: #fff;
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 55px;
+}
+.bg-preestudios .menu-preestudios{
+    display: flex;
+    justify-content: center;
+}
+.bg-preestudios .menu-preestudios a{
+    margin: 0 10px;
+    color: #fff;
+}
+.bg-preestudios .menu-preestudios p{
+    color: #fff;
+}
+.container{
+    padding: 0 20px;
+}
+   

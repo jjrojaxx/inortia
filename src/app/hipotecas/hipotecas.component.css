@@ -1,0 +1,132 @@
+.bg-hipotecas{
+    background-image: url('../../assets/img/bg-hipotecas.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 193px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bg-hipotecas h2{
+    color: #fff;
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 55px;
+}
+.bg-hipotecas .menu-hipotecas{
+    display: flex;
+    justify-content: center;
+}
+.bg-hipotecas .menu-hipotecas a{
+    margin: 0 10px;
+    color: #fff;
+}
+.bg-hipotecas .menu-hipotecas p{
+    color: #fff;
+}
+.container{
+    padding: 0 20px;
+}
+.container .resultados{
+    color: #6C6C6C;
+    font-size: 24px;
+    margin: 50px 0;
+    font-size: 28px;
+}
+.container .container-cards{
+    margin-bottom: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+}
+.container .contenedor-cards .card-h{
+    height: 453px;
+    width:auto;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.84);
+    border-radius: 20px;
+    transition: 0.4s;
+}
+.container .contenedor-cards .card-h img{
+    width: 100%;
+}
+.container .contenedor-cards .card-h:hover{
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.84);
+    transition: 0.3;
+}
+.container .contenedor-cards .content{
+    padding: 30px 15px 0 20px;
+}
+.container .contenedor-cards .content h3{
+    color: #272727;
+    font-size: 24px;
+}
+.container .contenedor-cards .content p{
+    margin-top: 20px;
+    color: #888888;
+    overflow: hidden;
+}
+.container .contenedor-cards .content button{
+    background-color: transparent;
+    border: 1px solid #D43346;
+    padding: 10px 25px;
+    border-radius: 50px;
+    color: #D43346;
+    font-size: 18px;
+    transition: 0.4s;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.container .contenedor-cards .content button:hover{
+    background-color: #D43346;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.container .selec-numerico{
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+}
+.container .selec-numerico a{
+    padding: 15px 20px;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.container .selec-numerico a:hover{
+    background-color: #d433469c;
+    border-radius: 10px;
+}
+.container .selec-numerico .selec{
+    background-color: #D43346;
+    color: #fff;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 1180px){
+    .container .container-cards{
+        grid-template-columns: repeat(2,1fr);  
+        padding: 0 400px;  
+    }
+    .container .contenedor-cards .card-h{
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 836px){
+    .container .container-cards{
+        grid-template-columns: repeat(1, 1fr);  
+      
+    }
+}
+@media only screen and (max-width: 836px){
+    .container .container-cards{
+       padding: 0 200px; 
+      
+    }
+}
+@media only screen and (max-width: 436px){
+    .container .container-cards{
+        padding: 0 100px;  
+     }
+}
