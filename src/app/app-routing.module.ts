@@ -2,6 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PreestudioComponent } from './componentes/preestudio/preestudio.component';
 import { SobreContactoComponent } from './componentes/sobre-contacto/sobre-contacto.component';
+import { SobreNosotrosComponent } from './componentes/sobre-nosotros/sobre-nosotros.component';
 import { SoliciteHipotecaComponent } from './componentes/solicite-hipoteca/solicite-hipoteca.component';
 import { HipotecasComponent } from './hipotecas/hipotecas.component';
 import { HomeComponent } from './home/home.component';
@@ -26,7 +27,7 @@ const routes: Routes = [
   },
   {
     path:'sobreNostros',
-    component:SobreContactoComponent
+    component:SobreNosotrosComponent
   },
   {
     path:'contacto',
