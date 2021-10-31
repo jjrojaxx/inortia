@@ -1,12 +1,14 @@
 .bg-hipotecas{
     background-image: url('../../assets/img/bg-hipotecas.png');
+    max-width: 2560px;
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 193px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .bg-hipotecas h2{
     color: #fff;
@@ -33,6 +35,7 @@
     font-size: 24px;
     margin: 50px 0;
     font-size: 28px;
+    
 }
 .container .container-cards{
     margin-bottom: 20px;
@@ -49,7 +52,7 @@
     transition: 0.4s;
 }
 .container .contenedor-cards .card-h img{
-    width: 100%;
+    min-width: 100%;
 }
 .container .contenedor-cards .card-h:hover{
     box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.84);
@@ -104,6 +107,16 @@
     color: #fff;
     border-radius: 10px;
 }
+@media only screen and (max-width: 1024px){
+    .container .resultados{
+        margin-left: 8%;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .container .resultados{
+        margin-left: 8%;
+    }
+}
 @media only screen and (max-width: 1180px){
     .container .container-cards{
         grid-template-columns: repeat(2,1fr);  
@@ -113,10 +126,15 @@
         width: 400px;
     }
 }
-@media only screen and (max-width: 836px){
+@media only screen and (max-width: 862px){
     .container .container-cards{
         grid-template-columns: repeat(1, 1fr);  
       
+    }
+    .container .resultados{
+       margin-left: 0;
+       display: flex;
+       justify-content: center;       
     }
 }
 @media only screen and (max-width: 836px){
@@ -129,4 +147,31 @@
     .container .container-cards{
         padding: 0 100px;  
      }
+}
+@media only screen and (max-width: 436px){
+    .container .contenedor-cards .card-h{
+        height: 453px;
+        width: 320px;
+        box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.84);
+        border-radius: 20px;
+        transition: 0.4s;
+    }
+    .container .contenedor-cards .card-h img{
+        width: 320px;
+    }
+    .container .container-cards{
+        padding: 0;  
+     }
+     .container .selec-numerico a{
+        padding: 10px 15px;
+        margin-right: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+@media only screen and (max-width: 436px){
+    .container .selec-numerico a{
+        margin-right: 0px;
+        font-size: 20px;
+    }
 }

@@ -3,6 +3,9 @@
 }
 .bg-sobre{
     background-image: url('../../../assets/img/cruce-peatonal.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 192px;
     display: flex;
     justify-content: center;
@@ -36,6 +39,10 @@
 .section-11 .container{
     display: flex;
     padding: 200px 20px;
+}
+.section-11 .container .img img{
+  width: 614px;
+  height: auto;
 }
 .section-11 .container .sobre-inortia{
     padding: 0 60px;
@@ -95,4 +102,25 @@
         margin: 0 auto;
     }
 
+}
+@media only screen and (max-width: 425px){
+    .section-11 .container .sobre-inortia{
+        padding: 0;
+    }
+    .section-11 .container .img img{
+        width: 380px;
+        height: auto;
+      }
+}
+@media only screen and (max-width: 375px){
+    .section-11 .container .img img{
+        width: 280px;
+        height: auto;
+      } 
+}
+@media only screen and (max-width: 320px){
+    .section-11 .container .img img{
+        width: 280px;
+        height: auto;
+      } 
 }

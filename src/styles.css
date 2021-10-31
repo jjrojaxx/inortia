@@ -84,7 +84,7 @@
        max-height: 750px;
        display: flex;
        align-items: center;
-       max-width: 1440px;
+       max-width: 2560px;
        width: 100%;
    }
    .section-1 .container h2{
@@ -212,6 +212,7 @@
        border-radius: 20px;
        box-shadow: 0px 5px 5px -6px rgba(0,0,0,0.9);
        border: 1px solid #afafaf;
+       max-width: 100%;
    }
    .section-2 .container .intermediacion .contenido{
        margin-top: 20px;
@@ -249,6 +250,7 @@
        border-radius: 40px;
        box-shadow: 0px 6px 10px -6px rgba(0,0,0,0.9);
        transition: .4s;
+       margin-right: 30px;
    }
    .section-2 .container .reproductor-video:hover{
        box-shadow: 0px 6px 15px -6px rgba(0,0,0,5);
@@ -291,14 +293,12 @@
        height: 100vh;  
        min-height: 800px;
        align-items: center;
-       width: 100%;
        display: grid;
        align-items: center;
        justify-content: center;
    }
    .section-3 .bloque-1{
        max-width: 610px;
-       width: 100%;
        height: 668px;
        border-radius: 20px;
        background-color: #F2F2F2;
@@ -308,7 +308,8 @@
        cursor: pointer;
    }
    .section-3 .bloque-1 img{
-       width: 100;
+       max-width: 610px;
+       height: auto;
    }
    .section-3 .container{
        display: grid;
@@ -330,7 +331,7 @@
        margin-top: 28px;
    }
    .section-3 .conten-2 .bloque-2{
-       width: 610px;
+       max-width: 610px;
        height: 265px;
        background-color: #F2F2F2;
        border-radius: 20px;
@@ -372,7 +373,7 @@
    }
    .section-3 .conten-2 .bloque-3{
        margin-top: 20px;
-       width: 295px;
+       max-width: 295px;
        height: 383px;
        background-color: #FDEDF1;
        border-radius: 20px;
@@ -386,7 +387,7 @@
    }
    .section-3 .conten-2 .bloque-3 .icon{
        height: 105px;
-       width: 105px;
+       max-width: 105px;
        background-color: var(--rosado);
        display: flex;
        justify-content: center;
@@ -530,6 +531,15 @@
        border-radius: 20px;
        transition: 0.4s;
    }
+   .section-5  .contenedor-recomendados .recomendados-1 img{
+       width: 100%;
+   }
+   .section-5  .contenedor-recomendados .recomendados-2 img{
+    width: 100%; 
+    }
+    .section-5  .contenedor-recomendados .recomendados-3 img{
+        width: 100%;
+    }
    .section-5  .contenedor-recomendados .recomendados-1, .recomendados-2{
        margin-right: 30px !important;
    }
@@ -627,7 +637,7 @@
        background-repeat: no-repeat;
        height: 280px;
        width: 100%;
-       max-width: 1440px;
+       max-width: 2560px;
    }
    .section-7{
        display: flex;
@@ -713,8 +723,8 @@
        background-size: cover;
        background-repeat: no-repeat;
        height: 154px;
-       width: 100%;
-       max-width: 1440px;
+       max-width: 2560px;
+       margin: auto;
    }
    footer .section-9 {
        background-color: #D43346;
@@ -845,12 +855,40 @@
        margin-top: 20px;
        color: #bdbcbc;
        font-size: 14px;
-   }
-   
-   /* Responsive */
-   @media only screen and (max-width: 991px){
-       .wrapper header nav .btn-clientes{
-           margin: 30px auto;
+    }
+    
+    /* Responsive */
+    
+    @media only screen and (max-width: 1024px){
+        .wrapper header nav .btn-clientes{
+            margin: 30px auto;
+        }
+        .section-1 .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .section-1 .container h2{
+            text-align: center;
+        }
+        .section-1 .container h3{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .section-1 .container .redes{
+            text-align: center;
+            margin: 50px auto;
+        }
+       .section-1{
+           background-image: url("assets/img/bg-principal.png");
+           background-position: center;
+           background-size: cover;
+           background-repeat: no-repeat;
+           max-height: 1350px;
+           display: flex;
+           align-items: center;
+           width: 100%;
        }
        .section-1 .container .calculadora{
            width: 300px;
@@ -860,133 +898,102 @@
            justify-content: center;
            margin: auto;
       } 
-       .section-1 .container{
-           margin-top: -100px;
-           display: grid;
-           justify-content: center;
-       }
-       .section-1{
-           background-image: url("assets/img/bg-principal.png");
-           background-position: center;
-           background-size: cover;
-           background-repeat: no-repeat;
-           height: 1800px;
-           max-height: 1500px;
-           display: flex;
-           align-items: center;
-           max-width: 1440px;
-           width: 100%;
-       }
-       .section-1 .container{
-           display: flex;
-           flex-direction: column;
-           justify-content: center;
-           margin-top: 20px;
-       }
-       .section-1 .container h2{
-           text-align: center;
-       }
-       .section-1 .container h3{
-           text-align: center;
-           margin-top: 20px;
-       }
-       .section-1 .container .redes{
-           text-align: center;
-           margin: 50px auto;
-       }
-       .section-2{
-           height: 1200px;
-       }
-       .section-2 .container {
-           margin-top: 50px;
-           padding:0 40px;
-       }
-       .section-2 .container .intermediacion{
-           margin: auto;
-       }
-       .section-2 .container .row .intermediacion .icon{
-           display: flex;
-           justify-content: center;
-       }
-       .section-2 .container .row .intermediacion .contenido{
-           display: flex;
-           flex-direction: column;
-           justify-content: center;
-       }
-       .section-2 .container .row .intermediacion .contenido h2{
-           text-align: center;
-       }
-       .section-2 .container .row .intermediacion .contenido p{
-           text-align: center;
-       }
-       .section-2 .container .reproductor-video{
-           margin: 50px auto;
-       }
-       .section-3{
-           height: 1450px;
-       }
-       .section-3 .container{
-           display: grid;
-           grid-template-columns: 1fr;
-           justify-content: center;
-           margin-left: 25px;
-       }
-       .section-3 .container .bloque-1{
-           width: 100%;
-       }
-       .section-3 .container .bloque-1 img{
-           width: 100%;
-       }
-       .section-3 .conten-2{
-           margin-top: 20px;
-       }
-       .section-3 .conten-2 .conten-3 .bloque-4{
-           margin: 20px 0 0 -10px;
-       }
-       .section-4 {
-           height: 1100px;
-       }
-       .section-4 .container{
-           grid-template-columns: 1fr;
-       }
-       .section-4 .intermediacion .icon{
-           display: grid;
-           justify-content: center;
-       }
-       .section-4 .intermediacion{
-           display: grid;
-           justify-content: center;
-       }
-       .section-4 .intermediacion .contenido h2{
-           text-align: center;
-       }
-       .section-4 .intermediacion .contenido p{
-           text-align: center;
-       }
-       .section-4 .intermediacion .contenido {
-           display: grid;
-           justify-content: center;
-       }
-       .section-4 .localizacion{
-           width: 610px;
-       }
-       .recomendados-3{
-           display: none;
-       }
-       .section-7 .cont .carousel .bg .carousel-item .contenedor-recomendados .three{
-           display: none;
-       }
+      .section-2{
+          height: 1200px;
+      }
+      .section-2 .container {
+          margin-top: 50px;
+          padding:0 40px;
+      }
+      .section-2 .container .intermediacion{
+          margin: auto;
+      }
+      .section-2 .container .row .intermediacion .icon{
+          display: flex;
+          justify-content: center;
+      }
+      .section-2 .container .row .intermediacion .contenido{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+      .section-2 .container .row .intermediacion .contenido h2{
+          text-align: center;
+      }
+      .section-2 .container .row .intermediacion .contenido p{
+          text-align: center;
+      }
+      .section-2 .container .reproductor-video{
+          margin: 50px auto;
+      }
+      .section-3{
+          height: 1450px;
+      }
+      .section-3 .container{
+          display: grid;
+          grid-template-columns: 1fr;
+          justify-content: center;
+          margin-left: 25px;
+      }
+      .section-3 .container .bloque-1{
+          width: 100%;
+      }
+      .section-3 .container .bloque-1 img{
+          width: 100%;
+      }
+      .section-3 .conten-2{
+          margin-top: 20px;
+      }
+      .section-3 .conten-2 .conten-3 .bloque-4{
+          margin: 20px 0 0 -10px;
+      }
+      .section-4 {
+          height: 1100px;
+      }
+      .section-4 .container{
+          grid-template-columns: 1fr;
+      }
+      .section-4 .intermediacion .icon{
+          display: grid;
+          justify-content: center;
+      }
+      .section-4 .intermediacion{
+          display: grid;
+          justify-content: center;
+      }
+      .section-4 .intermediacion .contenido h2{
+          text-align: center;
+      }
+      .section-4 .intermediacion .contenido p{
+          text-align: center;
+      }
+      .section-4 .intermediacion .contenido {
+          display: grid;
+          justify-content: center;
+      }
+      .section-4 .localizacion{
+          width: 610px;
+      }
+      .recomendados-3{
+          display: none;
+        }
+        .section-7 .cont .carousel .bg .carousel-item .contenedor-recomendados .three{
+          display: none;
+          
+      }
+      .section-5 .cont .carousel .bg {
+          width: 800px;
+      }
+      .section-5  .contenedor-recomendados{
+          margin-left: 30px;
+      }
+    }
+   @media only screen and (max-width: 991px){
        .btn-left{
            display: none;
        }
        .btn-next{
            opacity: 0;
-       }
-       .section-5  .contenedor-recomendados{
-           margin-left: 30px;
-       }
-       .section-5 .cont .carousel .bg {
-           width: 785px;
        }
        .section-5 .container {
            padding: 0 20px;
@@ -998,15 +1005,13 @@
            margin-bottom:  20px;
            text-align: center;
       }
-      .section-7 .cont .carousel .bg{
-          background-color: #e7e7e798;
-          padding: 0 5px;
-          border-radius: 30px;
+      .section-5 .cont .carousel .bg{
+          width: 400px;
       }
       footer .section-9{
           height: auto;
        }
-       footer .section-9 .container{
+      footer .section-9 .container{
            display: grid;
            justify-content: center;
            margin-top: 30px;
@@ -1057,14 +1062,262 @@
            justify-content: center;
        }
    }
-   @media only screen and (max-width: 800px){
-       .recomendados-2{
-           display: none;
-       }
-       .two{
-           display: none;
-       }
-       .section-5 .cont .carousel .bg{
-           width: 450px;
-       }    
-   }
+      @media only screen and (max-width: 907px){
+        .recomendados-2{
+            display: none;
+          }
+          .contenedor-recomendados .two{
+            display: none;   
+          }
+      }
+      @media only screen and (max-width: 425px){
+        .section-2 .container .reproductor-video{
+            display: none;
+        }
+        .section-1 .container h2{
+            color: var(--color-blanco);
+            line-height: 50px;
+            font-size: 30px;   
+        }
+        .section-1 .container h3{
+            font-size: 24px;
+        }
+        .section-1 .container .calculadora .input-calculadora p{
+            width: 100%;
+        }
+        .section-2 .container .row .intermediacion .contenido h2{
+            font-size: 27px;
+        }
+        .section-3 {
+            height: 1900px;
+        }
+        .section-3 .bloque-1 {
+            height: auto;
+        }
+        .section-3 .container{
+            padding: 0 20px;
+            margin-left: 0;
+        }
+        .section-3 .conten-2 .conten-3 .bloque-4{
+            margin: 0;
+        }
+        .section-3 .bloque-1 .contenido{
+            margin: 50px 10px; 
+         }
+         .section-3 .bloque-1 .contenido h2{
+             font-size: 26px;
+         }
+        .section-3 .conten-2 .bloque-2{
+            height: auto;
+            flex-direction: column;
+        }
+        .section-3 .conten-2 .bloque-2:hover{
+            box-shadow: 0px 3px 15px -6px rgba(0,0,0,5);
+            transition: 0.3s;
+        }
+        .section-3 .conten-2 .bloque-2 .icon img{
+            border: 2px solid var(--rosado);
+            padding: 20px;
+            border-radius: 20px;
+            margin: 30px 25px;
+        }
+        .section-3 .conten-2 .conten-3 {
+            flex-direction: column;
+           justify-content: center;
+        }
+        .section-3 .conten-2 .bloque-2 .contenido {
+            margin-left: 20px;
+        }
+        .section-3 .conten-2 .bloque-2 .contenido h2{
+            color:  var(--color-titulos);
+            font-weight: 400;
+            font-size: 27px;
+        }
+        .section-3 .conten-2 .bloque-2 .contenido h2 span{
+            display: none;
+        }
+        .section-3 .conten-2 .bloque-2 .contenido p{
+            margin-top: 20px;
+            line-height: 30px;
+            color: var(--color-subtitulos);
+        }
+        .section-3 .conten-2 .bloque-3{
+            margin-top: 20px;
+            max-width: 100%;
+            height: 320px;
+        }
+        .section-3 .conten-2 .bloque-3 p{
+            margin-left: 30px;
+            color: var(--color-subtitulos);
+        }
+        .section-3 .conten-2 .bloque-3 .icon img{
+            margin-left: 4px;
+        }
+        .section-3 .conten-2 .conten-3 {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .section-3 .conten-2 .conten-3 .bloque-4{
+            margin-top: 20px;
+            width: 100%;
+            height: 320px;
+        }
+        .section-2 .container .intermediacion .contenido h2{
+            font-size: 27px;
+        }
+        .section-5 .contenedor-recomendados{
+            margin-left: 0;
+        }
+
+        .section-5 .contenedor-recomendados .recomendados-1, .recomendados-2, .recomendados-3{
+            max-height: auto;
+            max-width: 350px;
+            background-color: #ffffff;
+            box-shadow: 0px 1px 15px -6px rgb(0 0 0);
+            margin-left: 30px;
+            border-radius: 20px;
+            transition: 0.4s;
+        }
+        .btn-left{
+          display: none;
+        }
+        .btn-next{
+          display: none;
+        }
+        .section-5 .cont .carousel {
+            display: flex;
+            justify-content: center;
+        }
+        .section-5 .cont .carousel .bg{
+            width: 100%;
+            margin: 0;
+            height: 500px;
+        }
+        .section-7 .cont .carousel .bg {
+            padding: 0;
+            width: 100%;
+        }
+        .section-7 .clientes{
+            width: 300px;
+            height: 415px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0px 1px 15px -6px rgba(0,0,0,5);
+            padding: 20px 20px;
+            margin: 25px 10px;
+        }
+        .section-5 .cont .carousel{
+            width: 375px;
+        }
+        .section-7 .clientes .contenido-1 h2 {
+            font-size: 18px;
+        }
+        .section-7 .clientes .reputacion {
+            width: 280px;
+            height: 80px;
+            margin-top: 20px;
+            margin-left: -10px;
+        }
+        .section-7 .contenido h2{
+            font-size: 24px;
+        }
+
+    }
+    @media only screen and (max-width: 320px){
+        .section-1 .container .redes {
+            text-align: center;
+            margin: 20px auto;
+        }
+        .section-1 .container .redes .twitter, .instagram{
+            margin-left: 10px;
+        }
+        .section-1 .container .redes .facebook, .twitter, .instagram {
+            padding: 8px 18px;
+        }
+        .section-1 .container .calculadora {
+            width: 240px;
+        }
+        .section-3 .bloque-1 .contenido h2 {
+            font-size: 20px;
+        }
+        .section-3 .bloque-1 .contenido p{
+            font-size: 12px;
+        }
+        .section-3 .conten-2 .bloque-2 .contenido h2 {
+            font-size: 20px;
+        }
+        .section-3 .conten-2 .bloque-2 .contenido p{
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .section-3 .conten-2 .bloque-3 h3{
+            font-size: 20px;
+        }
+        .section-3 .conten-2 .bloque-3 p{
+            font-size: 12px;
+        }
+        .section-3 .conten-2 .conten-3 .bloque-4 h3 {
+            font-size: 20px;
+        }
+        .section-3 .conten-2 .conten-3 .bloque-4 p{
+            font-size: 12px;
+        }
+        .section-2 .container .intermediacion .contenido h2{
+            font-size: 20px;
+        }
+        .section-5 .contenedor-recomendados .recomendados-1{
+            min-width: 280px;
+        }
+        .section-5 .contenedor-recomendados .recomendados-1 p{
+            font-size: 14px;
+        }
+        .section-7 .clientes .reputacion{
+            display: none;
+        }
+        .section-7 .clientes .contenido-1 h2{
+            font-size: 16px;
+        }
+        .section-2 .container .intermediacion .contenido p{
+            font-size: 12px;
+        }
+        .section-5 .contenido h2{
+            font-size: 20px;
+        }
+        .section-5 .contenido p {
+            font-size: 12px;
+        }
+        .section-7 .contenido h2{
+            font-size: 20px;
+        }
+        .section-5 .cont .carousel .bg {
+            width: 100%;
+        }
+        .section-2 .container .intermediacion .contenido button {
+            font-size: 14px;
+        }
+        .section-7 .clientes{
+            width: 280px;
+        }
+        .section-5 .cont .carousel {
+            width: 300px;
+        }
+        footer .section-9 .container .contac{
+            display: none;
+        }
+        .section-5 .recomendados-1 h2{
+            font-size: 20px;
+        }
+        .section-5 .cont .carousel .bg{
+            height: 470px;
+        }
+        .section-5 .contenedor-recomendados .recomendados-1{
+            height: 410px;
+        }
+        .section-2 .container .row .intermediacion .contenido h2 {
+            font-size: 20px;
+        }
+        .section-2 .container .row .intermediacion .contenido p{
+            font-size: 14px;
+        }
+
+    }
